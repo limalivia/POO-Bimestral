@@ -1,8 +1,11 @@
 package edu.br.ifal.lista;
 
-public class Contatos{
+import javax.persistence.OneToOne;
+
+public class Contato{
     private String nome;
     private String sobrenome;
+    @OneToOne
     private String  numero;
 
     public String getNome() {
